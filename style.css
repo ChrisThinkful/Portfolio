@@ -29,7 +29,7 @@ body {
     top: 6%;
     border-radius: 1rem;
 }
-.intro-short > h1 {
+.intro-short > h2 {
     padding: 0;
     margin: 0;
     font-size: 1.25rem;
@@ -99,7 +99,7 @@ body {
         top: 15%;
         left: 5%;
     }
-    .intro-short > h1 {
+    .intro-short > h2 {
         font-size: 1.75rem;
     }
     .intro-para {
@@ -127,7 +127,7 @@ body {
         left: 5%;
         padding: 5%;
     }
-    .intro-short > h1 {
+    .intro-short > h2 {
         font-size: 2rem;
     }
     .intro-para {
@@ -155,7 +155,7 @@ body {
         top: 20%;
         left: 5%;
     }
-    .intro-short > h1 {
+    .intro-short > h2 {
         font-size: 2.5rem;
     }
     .intro-para {
@@ -182,7 +182,7 @@ body {
         top: 20%;
         left: 5%;
     }
-    .intro-short > h1 {
+    .intro-short > h2 {
         font-size: 4rem;
     }
     .intro-para {
