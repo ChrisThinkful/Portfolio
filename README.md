@@ -14,7 +14,7 @@
 
 ## Resources
 
-All GIFs created using gifcap.dev created by [João Moreno](https://github.com/joaomoreno/gifcap)
+All GIFs created using [gifcap.dev](https://gifcap.dev/) created by [João Moreno](https://github.com/joaomoreno/gifcap)
 
 All icons are from [MDI](https://materialdesignicons.com/)
 
