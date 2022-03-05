@@ -1,0 +1,409 @@
+/*---------- General Styling/Font Import ----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*---------- Body ----------*/
+
+body {
+    height: min(100vh, 100%);
+    background-color: #aee1f9;
+    background-image: linear-gradient(315deg, #aee1f9 0%, #f6ebe6 74%);
+    display: grid;
+    /* gap: 5%; */
+    padding: .5rem;
+}
+
+/*---------- Main ----------*/
+
+.intro-short {
+    position: absolute;
+    background-color: rgb(133, 182, 255);
+    color: white;
+    padding: 1rem;
+    width: 8rem;
+    top: 6%;
+    border-radius: 1rem;
+}
+
+
+.intro-short > h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.intro-para {
+    padding: 0;
+    margin: 0;
+    font-size: .4rem;
+}
+
+.navbar-and-photo {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+.grey-bg {
+    background-color: rgba(0, 4, 255, 0.062);
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .5rem;
+    padding: .25rem .5rem;
+    border-radius: 4px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    font-size: .625rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(92, 124, 172);
+}
+
+.navbar a:hover {
+    filter: invert(1);
+}
+
+.photo {
+    grid-column-start: 2;
+}
+
+.photo > img {
+    margin: auto;
+    display: block;
+    height: 9rem;
+    border-radius: 4px;
+}
+
+@media (min-width: 375px) {
+    .intro-short {
+        width: 10rem;
+        top: 8%;
+    }
+    .intro-para {
+        font-size: .5rem;
+    }
+    .photo > img {
+        height: 12rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 500px) {
+    .navbar-and-photo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grey-bg {
+        grid-column: 2 / span 2;
+    }
+    .intro-short {
+        width: 22rem;
+        top: 15%;
+        left: 5%;
+    }
+    .intro-short > h1 {
+        font-size: 1.75rem;
+    }
+    .intro-para {
+        font-size: 1rem;
+    }
+    .navbar ul {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    .photo > img {
+        height: 20rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .navbar-and-photo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grey-bg {
+        grid-column: 2 / span 3;
+    }
+    .intro-short {
+        width: 20rem;
+        top: 20%;
+        left: 5%;
+        padding: 5%;
+    }
+    .intro-short > h1 {
+        font-size: 2rem;
+    }
+    .intro-para {
+        font-size: 1.25rem;
+    }
+    .navbar ul {
+        gap: 1rem;
+        font-size: 1.25rem;
+    }
+    .photo > img {
+        height: 30rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-and-photo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grey-bg {
+        grid-column: 2 / span 3;
+        gap: 2rem;
+    }
+    .intro-short {
+        width: 30rem;
+        top: 20%;
+        left: 5%;
+    }
+    .intro-short > h1 {
+        font-size: 2.5rem;
+    }
+    .intro-para {
+        font-size: 1.5rem;
+    }
+    .navbar ul {
+        gap: 3rem;
+        font-size: 2rem;
+    }
+    .photo > img {
+        height: 35rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .navbar-and-photo {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .grey-bg {
+        grid-column: 2 / span 4;
+    }
+    .intro-short {
+        width: 40rem;
+        top: 20%;
+        left: 5%;
+    }
+    .intro-short > h1 {
+        font-size: 4rem;
+    }
+    .intro-para {
+        font-size: 2.25rem;
+    }
+    .navbar ul {
+        gap: 3rem;
+        font-size: 2rem;
+    }
+    .photo > img {
+        height: 60rem;
+        padding: 5rem;
+    }
+}
+
+/*---------- Projects ----------*/
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    gap: 1.5rem;
+    background-color: rgba(0, 4, 255, 0.048);
+    border-radius: 6px;
+    margin: 1rem 1rem;
+    color: #5c7cac;
+    padding: 1rem;
+}
+
+.proj-title {
+    grid-column: span 4;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+}
+
+.project a {
+    text-decoration: none;
+    color: #5c7cac;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.proj-img img {
+    height: 5rem;
+    width: auto;
+    border-radius: 4px;
+}
+
+.desc-para {
+    font-size: .625rem;
+    padding: .5rem .5rem 0;
+    text-align: center;
+}
+
+.tech-stack {
+    display: flex;
+    gap: .25rem;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.tech-stack img {
+    height: 1rem;
+}
+
+@media (min-width: 496px) {
+    .project {
+        flex-direction: column;
+        background-color: rgba(255,255,255,.2);
+    }
+}
+
+@media (min-width: 1100px) {
+    .proj-img img {
+        height: 9rem;
+    }
+    .desc-para {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .proj-img img {
+        height: 20rem;
+    }
+    .desc-para {
+        font-size: 1.5rem;
+    }
+}
+
+/*---------- About ----------*/
+
+.about-me {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    gap: 1rem;
+    margin: 1rem;
+    background-color: rgba(0, 4, 255, 0.048);
+    color: #5c7cac;
+    align-items: center;
+}
+
+.about-me p {
+    font-size: .625rem;
+    padding: 0 1rem;
+}
+
+.about-me p:first-child {
+    padding-top: 1rem;
+}
+
+
+.about-me p::first-letter {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.about-me ul {
+    padding: 1rem;
+    text-align: center;
+}
+
+.about-me ul li {
+    font-size: .625rem;
+}
+
+@media (min-width: 564px) {
+    .about-me p:nth-child(2) {
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 830px) {
+    .about-me p {
+        padding-top: 1rem;
+    }
+    .about-me ul {
+        grid-column-start: 2;
+    }
+}
+
+@media (min-width: 1100px) {
+    .about-me p {
+        font-size: 1rem;
+    }
+    .about-me p::first-letter {
+        font-size: 2rem;
+    }
+    .about-me ul > h6 {
+        font-size: 1rem;
+    }
+    .about-me ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .about-me p {
+        font-size: 1.5rem;
+    }
+    .about-me p::first-letter {
+        font-size: 3rem;
+    }
+    .about-me ul > h6 {
+        font-size: 3rem;
+    }
+    .about-me ul li {
+        font-size: 1.5rem;
+    }
+}
+
+/*---------- Footer ----------*/
+
+footer {
+    display: flex;
+    bottom: 0;
+    height: 2rem;
+    width: 100%;
+    color:rgb(92, 124, 172);
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+footer img {
+    height: 2rem;
+    display: block;
+}
+
+footer a img {
+    transition: transform .3s ease-in-out;
+}
+
+footer a img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
