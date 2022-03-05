@@ -24,3 +24,4 @@ All icons are from [MDI](https://materialdesignicons.com/)
 - [ ] Add more projects
 - [ ] Give sections appropriate headings
 - [ ] Improve overall UX
+- [ ] Implement variable fonts
