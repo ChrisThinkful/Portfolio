@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Clark, Chris - Portfolio</title>
 </head>
-<body>
+<body id="top">
     <div class="main" id="home">
         <div class="intro-short">
             <h1 class="title">Hi, I'm Chris</h1>
@@ -17,9 +17,9 @@
             <div class="grey-bg">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
                     </ul>
                 </nav>
                 <div class="photo">
@@ -99,15 +99,15 @@
         </div>
     </div>
     <div class="about-me" id="about">
-        <p id="intro=long">
+        <article id="intro=long">
             Again, my name is Chris. I'm a fullstack Software Engineer/Developer. I attended and completed Thinkful's Full Stack Software Engineering bootcamp. It was challenging coming from a background with literally zero coding experience, but with the guidance of my mentors and the teamwork of my classmates, we all made it through. I am currently located in Dallas, TX and looking for a job. My preference is for remote work, but I'm more than willing to relocate for the right position.  
-        </p>
-        <p id="my-start">
+        </article>
+        <article id="my-start">
             I got my start in Development when I decided that medicine, or the path to get there, wasn't suitable for myself or my budding family. I started looking into teaching myself a language, but it was all so new that I wasn't sure where to begin. I felt a bootcamp would be the best option. It would provide structure, sure, but more importantly, it would give me direction in this space of so many languages, frameworks, toolsets, etc. Several "like-drinking-from-a-fire-hose" months later, I graduated.
-        </p>
-        <p id="my-motivations">
+        </article>
+        <article id="my-motivations">
             What keeps me going? First and foremost, I want to give my daughter everything and more than my wonderful parents gave me when I was growing up. Besides that, I want to be the best I can be. I'm late to the game just now getting into software development, but that won't stop me. Whether employed or not, I spend a lot of my free time trying to either improve an existing skill or learn a new one. It's more than just being a firm believer in self-improvement too. I want to contribute to the world. 
-        </p>
+        </article>
         <ul id="interests">
             <h6>My Interests/Hobbies</h6>
             <li>Playing with my daughter</li>
@@ -118,6 +118,9 @@
         </ul>
     </div>
     <footer id="footer">
+        <span><a href="#top">
+            <img src="./assets/top.png" alt="up-arrow">
+        </a></span>
         Copyright &copy; Chris Clark
         <span><a href="https://github.com/ChrisThinkful" target="'_blank">
             <img src="./assets/github.png" alt="my-git">
